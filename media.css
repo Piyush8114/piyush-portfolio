@@ -1,0 +1,278 @@
+.home-img .img-box {
+    width: 420px;
+    height: 420px;
+    margin: 40px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 10px solid #00ff9d; */
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.35);
+    position: relative;
+}
+
+.home-img .img-item {
+    width: 100%;
+    height: 100%;
+}
+
+.home-img img {
+    width: 90% !important;
+    height: 90% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display: block;
+}
+
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+  /* navbar menu */
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(11, 15, 25, 0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .navbar-links.active {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+
+  .navbar-links li {
+    margin: 15px 0;
+  }
+
+  /* hero section */
+
+  .home {
+    flex-direction: column;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .home-info h1 {
+    font-size: 42px;
+  }
+
+  .home-info h2 {
+    font-size: 26px;
+  }
+
+      .home-img .img-box {
+        width: 380px;
+        height: 380px;
+    }
+
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+  }
+
+  .navbar ul li {
+    margin-left: 20px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+  }
+
+  /* Home Section */
+
+  .home {
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px 5% 0;
+    text-align: center;
+    /* border: 2px solid green; */
+  }
+
+  .home-info h1 {
+    font-size: 36px;
+  }
+
+  .home-info h2 {
+    font-size: 22px;
+  }
+
+  .home-info p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+
+  .home-info .btn-sci {
+    flex-direction: column;
+  }
+
+  .home-info .btn-sci .sci {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .home-img .img-box {
+    width: 280px;
+    height: 280px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.35);
+    margin: 20px auto;
+  }
+
+  .home-img .img-box::before,
+  .home-img .img-box::after {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  /* Experience Section */
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-grid {
+    padding: 0;
+  }
+
+  .job-title {
+    font-size: 1.1rem;
+  }
+
+  .job-description,
+  .job-highlights li {
+    font-size: 0.9rem;
+  }
+
+  /* Certification Section */
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .swiper-slide {
+    padding: 20px 15px;
+  }
+
+  .certificate-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .certificate-card p {
+    font-size: 0.95rem;
+  }
+
+  .education-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  /* footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    padding: 0;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .journey-section {
+    /* background: linear-gradient(#ffffff, #0f172a); */
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .journey-left {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .milestone {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .timeline::before {
+    top: auto;
+    bottom: 0;
+    height: 1px;
+  }
+}
+
+/* Extra Small Devices (e.g. < 480px) */
+@media (max-width: 480px) {
+
+  .home-info h1 {
+    font-size: 30px;
+  }
+
+  .home-info h2 {
+    font-size: 18px;
+  }
+
+  .home-info p {
+    font-size: 13px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+
+  .navbar ul li {
+    margin: 10px 15px;
+  }
+}
+
+
+
+
+
+/* ------------------ */
+
+
+
+
+
+
